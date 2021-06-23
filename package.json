@@ -1,0 +1,24 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon ./src/app.js",
+    "start": "pm2 start ./dist/app.js --name=test-node",
+    "build": "cross-env NODE_ENV=production node ./scripts/build.js"
+  },
+  "dependencies": {
+    "javascript-obfuscator": "2.11.0",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "log4js": "^6.3.0",
+    "webpack": "5.24.4",
+    "webpack-cli": "4.5.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "ora": "^5.4.1",
+    "webpack-obfuscator": "3.3.0"
+  }
+}
